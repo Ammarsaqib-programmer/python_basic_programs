@@ -1,0 +1,11 @@
+a = float(input("Enter the first term (a): "))
+d = float(input("Enter the common difference (d): "))
+n = int(input("Enter the number of terms (n): "))
+
+nth_term = a + (n - 1) * d
+sum_n = n / 2 * (2 * a + (n - 1) * d)
+sequence = [a + i * d for i in range(n)]
+
+print(f"\nThe {n}th term of the sequence is: {nth_term}")
+print(f"The sum of the first {n} terms is: {sum_n}")
+print(f"The sequence is: {sequence}")
